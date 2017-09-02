@@ -13,12 +13,12 @@ app.get('/', function (req, res) {
 
 
 
-
-var articleOne = {
-  title: 'ARTICLE One | BHAVYA SHAH',
-  heading: 'ARTICLE ONE',
-  date: '1 Sept 2017',
-  content: `
+var articles= {
+   articleOne : {
+                     title: 'ARTICLE One | BHAVYA SHAH',
+                       heading: 'ARTICLE ONE',
+                     date: '1 Sept 2017',
+                       content: `
              
              <h4>Personal</h4>
                <p>
@@ -35,10 +35,16 @@ var articleOne = {
          </ol>
          
         
-  `
+            `
+       
+              },
+    articleTow:{
+        
+    }   ,
+    articleThree:{}
+        
+
 };
-
-
 
 function createTemplate(data){
     
