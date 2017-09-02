@@ -16,7 +16,7 @@ app.get('/article-one', function (request ,response){
 });
 
 app.get('/article-two', function (request ,response){
-   response.send('Article two is requested and will be served here'); 
+   response.sendFile(path.join(__dirname, 'ui', 'article-one.html'));
 });
 
 app.get('/article-three', function (request ,response){
