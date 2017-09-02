@@ -20,7 +20,7 @@ app.get('/article-two', function (request ,response){
 });
 
 app.get('/article-three', function (request ,response){
-   response.send('Article three is requested and will be served here'); 
+   response.sendFile(path.join(__dirname, 'ui', 'article-three.html'));
 });
 
 
