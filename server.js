@@ -15,6 +15,14 @@ app.get('/article-one', function (request ,response){
    response.send('Article one is requested and will be served here'); 
 });
 
+app.get('/article-two', function (request ,response){
+   response.send('Article two is requested and will be served here'); 
+});
+
+app.get('/article-three', function (request ,response){
+   response.send('Article three is requested and will be served here'); 
+});
+
 
 
 app.get('/ui/style.css', function (req, res) {
